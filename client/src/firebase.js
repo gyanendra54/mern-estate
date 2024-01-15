@@ -8,12 +8,12 @@ import { getAnalytics } from "firebase/analytics";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "mern-estate-main.firebaseapp.com",
-  projectId: "mern-estate-main",
-  storageBucket: "mern-estate-main.appspot.com",
-  messagingSenderId: "241007414790",
-  appId: "1:241007414790:web:bdc311edaf646a560c7d87",
-  measurementId: "G-G1D47X31ZW"
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSEING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASURE_ID
 };
 
 // Initialize Firebase
