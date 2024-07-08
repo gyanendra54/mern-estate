@@ -1,4 +1,5 @@
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import {Button} from 'flowbite-react';
 import { app } from '../firebase';
 import { useDispatch } from 'react-redux';
 import { signInSuccess } from '../redux/user/userSlice';
@@ -33,12 +34,12 @@ export default function OAuth() {
     }
   };
   return (
-    <button
+    <Button
       onClick={handleGoogleClick}
       type='button'
-      className='bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95'
+      className='px-1 py-2 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500'
     >
-      Continue with google
-    </button>
+      Continue with Google
+    </Button>
   );
 }

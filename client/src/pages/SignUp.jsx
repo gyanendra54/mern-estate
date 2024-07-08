@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import {Button} from 'flowbite-react';
 import OAuth from '../components/OAuth';
 
 export default function SignUp() {
@@ -65,12 +66,12 @@ export default function SignUp() {
           onChange={handleChange}
         />
 
-        <button
+        <Button
           disabled={loading}
-          className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
+          className='px-2 py-2 bg-gradient-to-r from-orange-500 via-gray-500 to-green-500 rounded-lg text-white  hover:from-pink-500 hover:to-yellow-500 disabled:opacity-80'
         >
           {loading ? 'Loading...' : 'Sign Up'}
-        </button>
+        </Button>
         <OAuth/>
       </form>
       <div className='flex gap-2 mt-5'>

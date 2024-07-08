@@ -41,7 +41,7 @@ export default function Contact({ listing }) {
   
             <Link
             to={`mailto:${landlord.email}?subject=Regarding ${listing.name}&body=${message}`}
-            className='bg-slate-700 text-white text-center p-3 uppercase rounded-lg hover:opacity-95'
+            className='px-2 py-2 bg-gradient-to-r from-orange-500 via-gray-500 to-green-500 rounded-lg text-white text-center  hover:from-pink-500 hover:to-yellow-500 disabled:opacity-80'
             >
               Send Message          
             </Link>
